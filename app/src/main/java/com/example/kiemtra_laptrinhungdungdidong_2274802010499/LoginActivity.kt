@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
 class LoginActivity : AppCompatActivity() {
 
@@ -38,6 +39,10 @@ class LoginActivity : AppCompatActivity() {
                 tvStatus.text = "Mật khẩu phải có ít nhất 6 ký tự"
             } else {
                 tvStatus.text = "Xác thực thành công!"
+
+                val intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra("EMAIL", email)
+                startActivity(intent)
             }
         }
     }

@@ -11,6 +11,9 @@
         android:theme="@style/Theme.KiemTra_LapTrinhUngDungDiDong_2274802010499">
 
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
 
